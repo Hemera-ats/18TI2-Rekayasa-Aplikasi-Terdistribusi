@@ -15,7 +15,7 @@ client_color = random.choice(colorsMessage)
 
 SERVER_HOST = "127.0.0.1"
 SERVER_PORT = 8080 # server's port
-separator = "<SEP>" # we will use this to separate the client name & message
+separator = "<SEP>"
 
 # initialize TCP socket
 s = socket.socket()
@@ -25,7 +25,7 @@ s.connect((SERVER_HOST, SERVER_PORT))
 print("[+] Connected.")
 
 # prompt the client for a name
-name = input("Enter your name: ")
+name = input("Please enter your name: ")
 
 def listeningMessages():
     while True:
@@ -45,10 +45,10 @@ while True:
     # to break the connection
     if to_send.lower() == 'end':
         break
-    # add the datetime, name & the color of the sender
+    # datetime, coloe and name
     date_now = datetime.now().strftime('%Y-%m-%d %H:%M:%S') 
     to_send = f"{client_color}[{date_now}] {name}{separator}{to_send}{Fore.RESET}"
-    # finally, send the message
+    # send the message
     s.send(to_send.encode())
 
 # close the socket
