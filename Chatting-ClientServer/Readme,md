@@ -18,4 +18,10 @@ py client.py
 Maka akan muncuk sebuah tab ui yang akan berisi ip address dan port, isilah ip dan port sesuai dengan ip dan port yang terdapat dalam server.py saat dikoneksikan
 Ketika tidak sesuai dengan port dan ip address yang telah dikoneksikan maka client tidak dapat mengakses chat room (connection refused/failed)
 
-Setelah terkoneksi maka tab "chat room" akan dapat di-klik dan akan 
+Setelah terkoneksi maka tab "chat room" akan dapat di-klik dan akan dapat melakukan percakapan disana
+
+Orang baru dapat bergabung dalam percakapan dengan menjalankan client.py dan juga dengan menggunakan ip dan port yang sama, setelah itu akan muncul tab dan diminta untuk menuliskan
+nama, dan setelah terkoneksi maka dapat bergabung dengan percakapan.
+
+Dalam percakapan dapat mengirim sticker dan juga melakukan percakapan private dengan orang yang terdapat di dalam percakapan, jika sesorang melakukan private chat kepada sesorang
+maka orang ketiga tidak dapat melihat percakapan tersebut karena bersifat private.
