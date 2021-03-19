@@ -15,14 +15,14 @@ ip : 127.0.0.1
 
 port : 8080
 
-sehingga ketika user menekan:
+sehingga ketika user tidak tau ingin menggunakan ip dan port apa maka ketika user menekan:
 
 py server.py akan secara otomatis terkoneksi dengan ip dan port yang menjadi default
 
 setelah berhasil dikoneksikan maka jalankan clien.py :
 py client.py
 
-Maka akan muncuk sebuah tab ui yang akan berisi ip address dan port, isilah ip dan port sesuai dengan ip dan port yang terdapat dalam server.py saat dikoneksikan.
+Maka akan muncuk sebuah tab UI yang akan berisi ip address dan port, isilah ip dan port sesuai dengan ip dan port yang terdapat dalam server.py saat dikoneksikan.
 Ketika tidak sesuai dengan port dan ip address yang telah dikoneksikan maka client tidak dapat mengakses chat room (connection refused/failed)
 
 Setelah terkoneksi maka tab "chat room" akan dapat di-klik dan akan dapat melakukan percakapan disana
@@ -31,6 +31,6 @@ Orang baru dapat bergabung dalam percakapan dengan menjalankan client.py dan jug
 
 nama, dan setelah terkoneksi maka dapat bergabung dengan percakapan.
 
-Dalam percakapan dapat mengirim sticker dan juga melakukan percakapan private dengan orang yang terdapat di dalam percakapan, jika sesorang melakukan private chat kepada sesorang
+Dalam percakapan dapat mengirim sticker dan juga dapat melakukan percakapan private dengan orang yang terdapat di dalam percakapan, jika sesorang melakukan private chat kepada sesorang
 
 maka orang ketiga tidak dapat melihat percakapan tersebut karena bersifat private.
