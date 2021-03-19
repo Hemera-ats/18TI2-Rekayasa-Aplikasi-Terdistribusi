@@ -6,6 +6,7 @@ Nama : Julina Happy
 
 Dependencies
 - socket
+- functools
 - PyQt5 -> untuk membuat widget/UI
 - thread -> untuk multitasking
 - argparse/argument parse -> untuk memproses argumen
