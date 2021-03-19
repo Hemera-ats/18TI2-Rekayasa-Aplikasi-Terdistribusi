@@ -4,6 +4,13 @@ NIM : 03082180002
 
 Nama : Julina Happy
 
+Dependencies
+
+
+Requirement
+- python 3.9
+- cmd/other
+
 Dalam flie client server ini, saya memilih untuk melakukan fitur chatting/messaging
 
 Pertama jalankan terlebih dahulu server.py dengan :
