@@ -5,7 +5,7 @@ Nama : Julina Happy
 Dalam flie client server ini, saya memilih untuk melakukan fitur chatting/messaging
 
 Pertama jalankan terlebih dahulu server.py dengan :
-py server.py --host 127.0.0.1 --port 8080(blh port dan ip yang lain, tetapi saat dikoneksikan harus menggunakan port yang sama agar terkoneksi dengan sesama client)
+py server.py --host 127.0.0.1 --port 8080(blh port yang lain, tetapi saat dikoneksikan harus menggunakan port yang sama agar terkoneksi dengan sesama client)
 tetapi dalam default saya memberikan:
 ip : 127.0.0.1
 port : 8080
