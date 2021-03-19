@@ -5,7 +5,10 @@ NIM : 03082180002
 Nama : Julina Happy
 
 Dependencies
-
+- socket
+- PyQt5 -> untuk membuat widget/UI
+- thread -> untuk multitasking
+- argparse/argument parse -> untuk memproses argumen
 
 Requirement
 - python 3.9
