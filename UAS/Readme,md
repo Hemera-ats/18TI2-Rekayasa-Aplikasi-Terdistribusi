@@ -1,1 +1,7 @@
+UAS ini saya menggunakan CoinCap API sebagai API saya, dimana CoinCap merupakan sebuah tools yang digunakan untuk melihat market activty secara real-time(cryptocurrency)
 
+Endpoints yang disediakan oleh CoinCap beragam macam mulai dari:
+1. Endpoint asset(akan menampilkan data dalam bentuk json, yang berisikan asset yang terdapat dalam CoinCap, dan diurutkan dari rank 1.
+api.coincap.io/v2/assets
+
+2. Endpoint
