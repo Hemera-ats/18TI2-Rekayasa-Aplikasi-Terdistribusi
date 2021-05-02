@@ -1,6 +1,6 @@
-##Nama : Julina Happy
-##NIM : 03082180002
-##Kelas : 18TI2
+## Nama : Julina Happy
+## IM : 03082180002
+## Kelas : 18TI2
 
 # Crypto List and Price using CoinCap API
 
