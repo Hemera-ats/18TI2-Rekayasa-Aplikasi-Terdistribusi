@@ -1,3 +1,7 @@
+##Nama : Julina Happy
+##NIM : 03082180002
+##Kelas : 18TI2
+
 # Crypto List and Price using CoinCap API
 
 Dalam UAS ini saya menggunakan CoinCap API sebagai API saya, dimana CoinCap merupakan sebuah tools yang digunakan untuk melihat market activty secara real-time(cryptocurrency)
