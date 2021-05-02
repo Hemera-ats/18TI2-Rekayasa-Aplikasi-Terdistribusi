@@ -1,19 +1,31 @@
 # Crypto List and Price using CoinCap API
 
-
-UAS ini saya menggunakan CoinCap API sebagai API saya, dimana CoinCap merupakan sebuah tools yang digunakan untuk melihat market activty secara real-time(cryptocurrency)
+Dalam UAS ini saya menggunakan CoinCap API sebagai API saya, dimana CoinCap merupakan sebuah tools yang digunakan untuk melihat market activty secara real-time(cryptocurrency)
 Dokumentasi CoinCap https://docs.coincap.io/
 
-Endpoints yang disediakan oleh CoinCap beragam macam mulai dari:
-1. Endpoint asset(akan menampilkan data dalam bentuk json, yang berisikan asset yang terdapat dalam CoinCap, dan diurutkan dari rank 1.
+# Endopoints
+Endpoints yang saya gunakan dalam project kali ini adalah:
 api.coincap.io/v2/assets
 
-2. Endpoint 
+# Requirement
+Requirement yang dibutuhkan untuk dapat menjalankan project ini adalah sebagai berikut:
+- Visual Studio Code
+- Terminal / Command Prompt
+- Python
+- Web Browser(Chrome)
 
-3. Endpoint asset berdasarkan id dan history (dengan interval day, month or hour) 
-api.coincap.io/v2/assets/bitcoin/history?interval=d1
+# Dependencies
+Dependencies yang diperlukan adalah sebagai berikut:
+- Django
 
-4. Endopint asset berdasarkan id dan market
-api.coincap.io/v2/assets/bitcoin/markets
+# Running the Code
+- Install the project
+- import django
+- run -> py manage.py runserver untuk mendapatkan url server yang akan memunculkan
+  Starting development server at http://127.0.0.1:8000/
+- Setelah itu ketika akan masuk ke halaman list dari crypto, url tersebut ditambahkan dengan path yang telah dibuat yaitu:
+  path('api/coin-list', views.coin_list, name="coin list"), yang artinya http://127.0.0.1:8000/api/coin-list
+- Setelah di klik maka akan ditemukan harga/price dari crypto tersebut atau dengan path:path('api/coin-list/<str:coinName>', views.coin_view, name="Coin Desc"),
+  yang artinya http://127.0.0.1:8000/api/coin-list/bitcon (untuk contoh list crypto bitcoin)
 
 
