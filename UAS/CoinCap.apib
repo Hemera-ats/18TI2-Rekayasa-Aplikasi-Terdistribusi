@@ -1,0 +1,164 @@
+FORMAT: 1A
+HOST: http://localhost:8000
+
+# Crypto List and Price using CoinCap API
+
+CoinCap merupakan sebuah website yang menyediakan data berupa cryptocurrency, dimana data tersebut dikumpulkan dari
+beberapa sumber sehingga akan menghasilkan data yang transparan dan akurat.
+
+## CoinCap API
+Dokumentasi CoinCap API dapat didapatkan dari link berikut:
+https://docs.coincap.io/
+
+Dan API dari coincap yang saya gunakan adalah:
+api.coincap.io/v2/assets untuk mendapatkan asset dari crypto yaitu List dan PriceUsd
+
+## *Links = https://api.coincap.io/v2/assets
+
+### Request URL [GET /api/coin-list]
+
++ Request 200 (application/py)
+
+    import requests
+
+    base_url = 'https://api.coincap.io/v2/'
+    base_payload = {}
+    base_headers = {}
+
+    def get_assets() -> str:
+        """
+        Returns a list of all assets
+        TODO: add optional params
+        """
+        method = 'assets'
+        url = base_url + method
+        response = requests.get(url)
+        print(type(response))
+        return response.json()
+
++ Respond 200
+    <a style='display:block;' href='coin-list/bitcoin'>bitcoin</a>
+    <a style='display:block;' href='coin-list/ethereum'>ethereum</a>
+    <a style='display:block;' href='coin-list/binance-coin'>binance-coin</a>
+    <a style='display:block;' href='coin-list/xrp'>xrp</a>
+    <a style='display:block;' href='coin-list/tether'>tether</a>
+    <a style='display:block;' href='coin-list/dogecoin'>dogecoin</a>
+    <a style='display:block;' href='coin-list/cardano'>cardano</a>
+    <a style='display:block;' href='coin-list/polkadot'>polkadot</a>
+    <a style='display:block;' href='coin-list/uniswap'>uniswap</a>
+    <a style='display:block;' href='coin-list/bitcoin-cash'>bitcoin-cash</a>
+    <a style='display:block;' href='coin-list/litecoin'>litecoin</a>
+    <a style='display:block;' href='coin-list/chainlink'>chainlink</a>
+    <a style='display:block;' href='coin-list/usd-coin'>usd-coin</a>
+    <a style='display:block;' href='coin-list/vechain'>vechain</a>
+    <a style='display:block;' href='coin-list/solana'>solana</a>
+    <a style='display:block;' href='coin-list/stellar'>stellar</a>
+    <a style='display:block;' href='coin-list/theta'>theta</a>
+    <a style='display:block;' href='coin-list/filecoin'>filecoin</a>
+    <a style='display:block;' href='coin-list/wrapped-bitcoin'>wrapped-bitcoin</a>
+    <a style='display:block;' href='coin-list/tron'>tron</a>
+    <a style='display:block;' href='coin-list/neo'>neo</a>
+    <a style='display:block;' href='coin-list/monero'>monero</a>
+    <a style='display:block;' href='coin-list/terra-luna'>terra-luna</a>
+    <a style='display:block;' href='coin-list/bitcoin-sv'>bitcoin-sv</a>
+    <a style='display:block;' href='coin-list/aave'>aave</a>
+    <a style='display:block;' href='coin-list/eos'>eos</a>
+    <a style='display:block;' href='coin-list/iota'>iota</a>
+    <a style='display:block;' href='coin-list/cosmos'>cosmos</a>
+    <a style='display:block;' href='coin-list/ethereum-classic'>ethereum-classic</a>
+    <a style='display:block;' href='coin-list/maker'>maker</a>
+    <a style='display:block;' href='coin-list/ftx-token'>ftx-token</a>
+    <a style='display:block;' href='coin-list/huobi-token'>huobi-token</a>
+    <a style='display:block;' href='coin-list/crypto-com-coin'>crypto-com-coin</a>
+    <a style='display:block;' href='coin-list/bittorrent'>bittorrent</a>
+    <a style='display:block;' href='coin-list/tezos'>tezos</a>
+    <a style='display:block;' href='coin-list/algorand'>algorand</a>
+    <a style='display:block;' href='coin-list/compound'>compound</a>
+    <a style='display:block;' href='coin-list/matic-network'>matic-network</a>
+    <a style='display:block;' href='coin-list/multi-collateral-dai'>multi-collateral-dai</a>
+    <a style='display:block;' href='coin-list/thorchain'>thorchain</a>
+    <a style='display:block;' href='coin-list/waves'>waves</a>
+    <a style='display:block;' href='coin-list/kusama'>kusama</a>
+    <a style='display:block;' href='coin-list/elrond-egld'>elrond-egld</a>
+    <a style='display:block;' href='coin-list/dash'>dash</a>
+    <a style='display:block;' href='coin-list/nem'>nem</a>
+    <a style='display:block;' href='coin-list/chiliz'>chiliz</a>
+    <a style='display:block;' href='coin-list/zcash'>zcash</a>
+    <a style='display:block;' href='coin-list/hedera-hashgraph'>hedera-hashgraph</a>
+    <a style='display:block;' href='coin-list/decred'>decred</a>
+    <a style='display:block;' href='coin-list/unus-sed-leo'>unus-sed-leo</a>
+    <a style='display:block;' href='coin-list/zilliqa'>zilliqa</a>
+    <a style='display:block;' href='coin-list/okb'>okb</a>
+    <a style='display:block;' href='coin-list/decentraland'>decentraland</a>
+    <a style='display:block;' href='coin-list/enjin-coin'>enjin-coin</a>
+    <a style='display:block;' href='coin-list/digibyte'>digibyte</a>
+    <a style='display:block;' href='coin-list/nexo'>nexo</a>
+    <a style='display:block;' href='coin-list/synthetix-network-token'>synthetix-network-token</a>
+    <a style='display:block;' href='coin-list/theta-fuel'>theta-fuel</a>
+    <a style='display:block;' href='coin-list/siacoin'>siacoin</a>
+    <a style='display:block;' href='coin-list/basic-attention-token'>basic-attention-token</a>
+    <a style='display:block;' href='coin-list/yearn-finance'>yearn-finance</a>
+    <a style='display:block;' href='coin-list/fantom'>fantom</a>
+    <a style='display:block;' href='coin-list/sushiswap'>sushiswap</a>
+    <a style='display:block;' href='coin-list/bitcoin-gold'>bitcoin-gold</a>
+    <a style='display:block;' href='coin-list/ravencoin'>ravencoin</a>
+    <a style='display:block;' href='coin-list/ontology'>ontology</a>
+    <a style='display:block;' href='coin-list/uma'>uma</a>
+    <a style='display:block;' href='coin-list/icon'>icon</a>
+    <a style='display:block;' href='coin-list/blockstack'>blockstack</a>
+    <a style='display:block;' href='coin-list/qtum'>qtum</a>
+    <a style='display:block;' href='coin-list/0x'>0x</a>
+    <a style='display:block;' href='coin-list/celsius'>celsius</a>
+    <a style='display:block;' href='coin-list/swissborg'>swissborg</a>
+    <a style='display:block;' href='coin-list/harmony'>harmony</a>
+    <a style='display:block;' href='coin-list/horizen'>horizen</a>
+    <a style='display:block;' href='coin-list/bancor'>bancor</a>
+    <a style='display:block;' href='coin-list/nano'>nano</a>
+    <a style='display:block;' href='coin-list/celo'>celo</a>
+    <a style='display:block;' href='coin-list/omg'>omg</a>
+    <a style='display:block;' href='coin-list/ankr'>ankr</a>
+    <a style='display:block;' href='coin-list/kucoin-shares'>kucoin-shares</a>
+    <a style='display:block;' href='coin-list/reserve-rights'>reserve-rights</a>
+    <a style='display:block;' href='coin-list/iostoken'>iostoken</a>
+    <a style='display:block;' href='coin-list/dent'>dent</a>
+    <a style='display:block;' href='coin-list/ren'>ren</a>
+    <a style='display:block;' href='coin-list/arweave'>arweave</a>
+    <a style='display:block;' href='coin-list/verge'>verge</a>
+    <a style='display:block;' href='coin-list/telcoin'>telcoin</a>
+    <a style='display:block;' href='coin-list/lisk'>lisk</a>
+    <a style='display:block;' href='coin-list/livepeer'>livepeer</a>
+    <a style='display:block;' href='coin-list/loopring'>loopring</a>
+    <a style='display:block;' href='coin-list/kyber-network'>kyber-network</a>
+    <a style='display:block;' href='coin-list/bitmax-token'>bitmax-token</a>
+    <a style='display:block;' href='coin-list/nervos-network'>nervos-network</a>
+    <a style='display:block;' href='coin-list/vethor-token'>vethor-token</a>
+    <a style='display:block;' href='coin-list/status'>status</a>
+    <a style='display:block;' href='coin-list/iotex'>iotex</a>
+    <a style='display:block;' href='coin-list/storj'>storj</a>
+    <a style='display:block;' href='coin-list/abbc-coin'>abbc-coin</a>
+    <a style='display:block;' href='coin-list/serum'>serum</a>
+        
+### Request Price  [GET /api/coin-list/bitcoin]
++ Request 200 (appication/py)
+    import requests
+
+    base_url = 'https://api.coincap.io/v2/'
+    base_payload = {}
+    base_headers = {}
+
+    def get_assets() -> str:
+        """
+        Returns a list of all assets
+        TODO: add optional params
+        """
+        method = 'assets'
+        url = base_url + method
+        response = requests.get(url)
+        print(type(response))
+        return response.json()[coinName].price
+
++ Respond 200
+    58047.5143231237622364
+
+
+
