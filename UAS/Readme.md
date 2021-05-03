@@ -32,4 +32,7 @@ Dependencies yang diperlukan adalah sebagai berikut:
 - Setelah di klik maka akan ditemukan harga/price dari crypto tersebut atau dengan path:path('api/coin-list/<str:coinName>', views.coin_view, name="Coin Desc"),
   yang artinya http://127.0.0.1:8000/api/coin-list/bitcon (untuk contoh list crypto bitcoin)
 
+# Hasil/Result ScreenShoot
+![Screenshot 2021-05-03 141815](https://user-images.githubusercontent.com/51821803/116851652-ff774380-ac1c-11eb-9519-a759666c200b.png)
+![Screenshot 2021-05-03 141830](https://user-images.githubusercontent.com/51821803/116851667-04d48e00-ac1d-11eb-938a-e8009ce9fabe.png)
 
